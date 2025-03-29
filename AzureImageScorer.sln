@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageService", "ImageServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageServiceTests", "ImageServiceTests\ImageServiceTests.csproj", "{B43ECFB3-9BAA-45AE-A4B5-6DC044E4EC27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageShared", "ImageShared\ImageShared.csproj", "{D6C4818D-1C01-49E1-AB95-884EF8DD6B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{B43ECFB3-9BAA-45AE-A4B5-6DC044E4EC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B43ECFB3-9BAA-45AE-A4B5-6DC044E4EC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B43ECFB3-9BAA-45AE-A4B5-6DC044E4EC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C4818D-1C01-49E1-AB95-884EF8DD6B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C4818D-1C01-49E1-AB95-884EF8DD6B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C4818D-1C01-49E1-AB95-884EF8DD6B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C4818D-1C01-49E1-AB95-884EF8DD6B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
