@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSCORER", "ImageSCORER\ImageSCORER.csproj", "{5010F3D0-0806-48DB-86F6-D955B60AA081}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageScorer", "ImageScorer\ImageScorer.csproj", "{5010F3D0-0806-48DB-86F6-D955B60AA081}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageService", "ImageService\ImageService.csproj", "{7E48B6B3-6217-4738-A034-40AA391F0F6A}"
 EndProject

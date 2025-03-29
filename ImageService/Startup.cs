@@ -1,7 +1,5 @@
 using Azure;
 using Azure.AI.Vision.ImageAnalysis;
-using ImageAnalysis.Api;
-using ImageAnalysis.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +11,9 @@ using System;
 using System.Text.Json.Serialization;
 using ImageService;
 using ImageService.ImageAnalysis.Helpers;
-
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 namespace ImageAnalysis
 {
     public class Startup
@@ -59,7 +59,7 @@ namespace ImageAnalysis
         {
             if (env.IsDevelopment())
             {
-=                app.UseSwagger();
+                app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Image Analysis API v1"));
             }
 
