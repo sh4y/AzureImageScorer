@@ -1,20 +1,10 @@
-using Azure;
-using Azure.AI.Vision.ImageAnalysis;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+
 using Microsoft.OpenApi.Models;
 using System;
 using System.Text.Json.Serialization;
-using ImageService;
 using ImageService.ImageAnalysis.Helpers;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-namespace ImageAnalysis
+
+namespace ImageService
 {
     public class Startup
     {
@@ -86,18 +76,8 @@ namespace ImageAnalysis
                     "Please set AzureVision:Endpoint and AzureVision:Key in appsettings.json or environment variables.");
             }
 
-            // Register the analyzer with default configuration
-            services.AddSingleton<IImageAnalyzer>(provider =>
-            {
-                var client = new ImageAnalysisClient(
-                    new Uri(endpoint),
-                    new AzureKeyCredential(key));
-
-                return new ImageAnalyzer(endpoint, key);
-            });
-
-            // Register the service
-            services.AddScoped<IImageAnalysisService, ImageAnalysisService>();
+            // Register the image analysis services using the extension method
+            services.AddImageAnalysis(endpoint, key);
         }
     }
 }

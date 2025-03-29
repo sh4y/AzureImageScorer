@@ -1,4 +1,4 @@
-using ImageAnalysis;
+using ImageScorer;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ImageService;

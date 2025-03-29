@@ -1,6 +1,6 @@
 using Azure.AI.Vision.ImageAnalysis;
 
-namespace ImageAnalysis;
+namespace ImageScorer;
 
 /// <summary>
 /// Result processor for image analysis

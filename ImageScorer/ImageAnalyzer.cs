@@ -1,7 +1,7 @@
 using Azure;
 using Azure.AI.Vision.ImageAnalysis;
 
-namespace ImageAnalysis;
+namespace ImageScorer;
 
 /// <summary>
 /// Analyzer for Azure Computer Vision images

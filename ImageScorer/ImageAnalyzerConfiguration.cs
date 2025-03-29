@@ -1,5 +1,6 @@
 using Azure.AI.Vision.ImageAnalysis;
 
+namespace ImageScorer;
 /// <summary>
 /// Configuration for the image analyzer
 /// </summary>

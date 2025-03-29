@@ -1,7 +1,5 @@
-using System;
-using System.Linq;
 
-namespace ImageAnalysis
+namespace ImageScorer
 {
     /// <summary>
     /// Example usage of the image analyzer

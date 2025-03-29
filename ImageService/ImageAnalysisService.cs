@@ -1,5 +1,5 @@
 using Azure.AI.Vision.ImageAnalysis;
-using ImageAnalysis;
+using ImageScorer;
 using Microsoft.Extensions.Logging;
 
 namespace ImageService;
